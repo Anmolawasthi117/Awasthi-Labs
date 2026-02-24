@@ -1,0 +1,14 @@
+{
+    "name": "Your Name",
+    "rotatingTitles": [
+        "Software Engineer",
+        "Engineering Student",
+        "Chess Enthusiast"
+    ],
+    "bio": "I'm an engineering student passionate about building efficient, scalable applications. I focus on writing clean code and solving complex problems, whether debugging a system or exploring new syntax in languages like Japanese or Tamil.",
+    "socials": {
+        "github": "https://github.com/yourusername",
+        "linkedin": "https://linkedin.com/in/yourusername",
+        "email": "your.email@example.com"
+    }
+}
