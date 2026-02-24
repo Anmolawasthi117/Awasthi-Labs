@@ -18,7 +18,7 @@ export const SkillsSection = () => {
   ];
 
   return (
-    <div className="flex flex-col gap-6 border-t border-zinc-900 pt-10">
+    <div className="flex flex-col gap-6">
       <h2 className="text-lg font-semibold tracking-tight text-zinc-100">
         Skills & Technologies
       </h2>

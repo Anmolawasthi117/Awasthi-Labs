@@ -3,7 +3,7 @@ import { ArrowUpRight, Pin } from "lucide-react";
 
 export const ProjectsSection = () => {
   return (
-    <div className="flex flex-col gap-6 border-t border-zinc-900 pt-10">
+    <div className="flex flex-col gap-6">
       <h2 className="text-lg font-semibold tracking-tight text-zinc-100">
         Projects
       </h2>
