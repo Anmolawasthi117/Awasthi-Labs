@@ -17,7 +17,7 @@
         "github": "https://github.com/Anmolawasthi117/oat",
         "live": "https://oat-cfed.vercel.app/",
         "coverImage": "/assets/oat.png",
-        "video": "/assets/videos/oat.mp4"
+        "video": ""
     },
     {
         "id": 2,
@@ -74,9 +74,8 @@
         "github": "https://github.com/Alpharex121/AIROSPHERE",
         "live": "https://airosphere.vercel.app",
         "coverImage": "/assets/airosphere.png",
-        "video": "/assets/videos/airosphere.mp4"
+        "video": ""
     },
-    
     {
         "id": 5,
         "title": "VibeScript (Chitrapath)",
