@@ -55,24 +55,14 @@ export const ProjectsSection = ({ limit }: ProjectsSectionProps) => {
                   <span className="text-xl font-bold uppercase tracking-wider text-zinc-50 opacity-20">Coming Soon</span>
                 )}
                 
-                {project.video && (
+                {project.video && hoveredId === project.id && (
                   <video 
-                    ref={(el) => {
-                      if (!el) return;
-                      if (hoveredId === project.id) {
-                        if (!el.src || el.src !== window.location.origin + project.video) {
-                          el.src = project.video;
-                        }
-                        el.play().catch(() => {});
-                      } else {
-                        el.pause();
-                      }
-                    }}
+                    src={project.video}
+                    autoPlay
                     loop 
                     muted 
                     playsInline
-                    preload="none"
-                    className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-300 ${hoveredId === project.id ? 'opacity-100' : 'opacity-0'}`}
+                    className="absolute inset-0 w-full h-full object-cover"
                   />
                 )}
 
