@@ -1,14 +1,15 @@
 {
-    "name": "Your Name",
+    "name": "Anmol Awasthi",
     "rotatingTitles": [
         "Software Engineer",
-        "Engineering Student",
-        "Chess Enthusiast"
+        "B.Tech AI & Robotics Student",
+        "LeetCode Knight (1800+)",
+        "MERN Stack Developer"
     ],
-    "bio": "I'm an engineering student passionate about building efficient, scalable applications. I focus on writing clean code and solving complex problems, whether debugging a system or exploring new syntax in languages like Japanese or Tamil.",
+    "bio": "I'm a final-year Artificial Intelligence & Robotics student at GGITS. I build privacy-first AI tools and high-performance applications, specializing in clean code and complex system design. I enjoy solving algorithmic challenges and exploring linguistic syntax in Japanese and Tamil.",
     "socials": {
-        "github": "https://github.com/yourusername",
-        "linkedin": "https://linkedin.com/in/yourusername",
-        "email": "your.email@example.com"
+        "github": "https://github.com/Anmolawasthi117",
+        "linkedin": "https://linkedin.com/in/anmol-awasthi11117",
+        "email": "anmolawasthi117@gmail.com"
     }
 }

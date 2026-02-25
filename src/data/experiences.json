@@ -1,37 +1,43 @@
 [
     {
         "id": 1,
-        "role": "Software Engineer",
-        "company": "Palo Alto Networks",
-        "type": "Full Time",
-        "date": "Aug, 2025 - Present",
-        "location": "Palo Alto, USA - Remote",
-        "logo": "https://avatar.vercel.sh/palo-alto",
+        "role": "Frontend Development Intern",
+        "company": "Tech Valley Corporation",
+        "type": "Remote Internship",
+        "date": "Aug 2025 - Sept 2025",
+        "location": "Remote",
+        "logo": "https://avatar.vercel.sh/techvalley",
         "highlights": [
-            "Owned the core presentation editor, driving major performance and reliability improvements",
-            "Designed and built core editor features like drag-and-drop, resize, and keyboard shortcuts end-to-end",
-            "Owned a foundational refactor, strengthening a critical codebase to enable safer and faster production",
-            "Drove major Drive page performance improvements, resolving bugs to deliver faster, reliable experiences"
+            "Implemented Zod for schema validation, ensuring consistent data output and reducing errors by 20%.",
+            "Enabled real-time data updates via WebSockets, reducing latency by 15%.",
+            "Used TypeScript to improve code quality and reduce debugging time by 25%."
         ],
         "skills": [
-            "Next",
+            "React",
             "Tailwind",
             "TypeScript",
-            "JavaScript",
-            "Express",
-            "PostgreSQL",
-            "Docker"
+            "Zod",
+            "WebSockets"
         ]
     },
     {
         "id": 2,
-        "role": "Full Stack Developer",
-        "company": "GSoC",
-        "type": "",
-        "date": "May, 2025 - Nov, 2025",
-        "location": "USA - Remote",
-        "logo": "https://avatar.vercel.sh/gsoc",
-        "highlights": [],
-        "skills": []
+        "role": "Final Year Engineering Student",
+        "company": "GGITS Jabalpur",
+        "type": "Education",
+        "date": "July 2022 - July 2026",
+        "location": "Jabalpur, MP",
+        "logo": "https://avatar.vercel.sh/ggits",
+        "highlights": [
+            "Winner of HackByte 3.0 for the Best Use of Gemini API.",
+            "Received an official Government Patent for 'Kanoon', an online lawyer service provider.",
+            "Achieved LeetCode Knight status with a rating of 1800+."
+        ],
+        "skills": [
+            "C++",
+            "Python",
+            "AI & Robotics",
+            "System Design"
+        ]
     }
 ]

@@ -1,74 +1,202 @@
 [
     {
         "id": 1,
-        "title": "Netflix Clone",
-        "description": "A full-stack Netflix clone featuring authentication, movie fetching from TMDB, and Stripe integration. Built to understand scalable video delivery and complex application states.",
+        "title": "OAT - Offline Album Tidy",
+        "description": "A privacy-first, browser-based face recognition tool that uses face-api.js and MobileFaceNet (ONNX) to sift through thousands of photos locally using Web Workers and OPFS.",
         "tech": [
-            "React",
-            "Node",
-            "MongoDB",
-            "Stripe"
+            "React 19",
+            "TypeScript",
+            "ONNX Runtime",
+            "IndexedDB",
+            "Zustand"
         ],
-        "github": "https://github.com/anmolawasthi117/netflix-clone",
-        "live": "https://netflix-clone.com",
-        "coverImage": "/assets/project1-cover.jpg",
-        "video": "/assets/project1-video.mp4"
+        "github": "https://github.com/Anmolawasthi117/oat",
+        "live": "https://oat-tidy.vercel.app",
+        "coverImage": "/assets/oat-cover.jpg",
+        "video": "/assets/oat-video.mp4"
     },
     {
         "id": 2,
-        "title": "E-Commerce Platform",
-        "description": "Modern e-commerce platform with cart functionality, secure checkout, and a comprehensive admin dashboard for inventory management.",
+        "title": "VibeScript (Chitrapath)",
+        "description": "An AI-powered storytelling experience that transforms PDFs into cinematic scenes with generated visuals, narration, and background music using LangGraph and Llama 3.2.",
         "tech": [
-            "Next.js",
-            "TailwindCSS",
-            "Prisma",
-            "PostgreSQL"
+            "FastAPI",
+            "React 19",
+            "Llama 3.2",
+            "SDXL Turbo",
+            "LangGraph"
         ],
-        "github": "https://github.com/anmolawasthi117/ecommerce",
-        "live": "https://ecommerce.com",
-        "coverImage": "/assets/project2-cover.jpg",
-        "video": "/assets/project2-video.mp4"
+        "github": "https://github.com/Anmolawasthi117/vibescript",
+        "live": "https://vibescript.vercel.app",
+        "coverImage": "/assets/vibescript-cover.jpg",
+        "video": "/assets/vibescript-video.mp4"
     },
     {
         "id": 3,
-        "title": "Portfolio v1",
-        "description": "My first developer portfolio showcasing basic projects and skills using React and CSS. This was my learning ground for pure frontend layout techniques.",
+        "title": "MediMate",
+        "description": "A smart medication companion unit featuring a circular 28-compartment automated dispenser, AI scheduling, and real-time adherence tracking via MediProgress.",
         "tech": [
+            "ESP32",
+            "C++",
             "React",
-            "CSS",
-            "Vite"
+            "Node.js",
+            "MQTT"
         ],
-        "github": "https://github.com/anmolawasthi117/portfolio-v1",
-        "live": "https://anmol.dev",
-        "coverImage": "/assets/project3-cover.jpg",
-        "video": "/assets/project3-video.mp4"
+        "github": "https://github.com/Anmolawasthi117/medimate",
+        "live": "",
+        "coverImage": "/assets/medimate-cover.jpg",
+        "video": "/assets/medimate-video.mp4"
     },
     {
         "id": 4,
-        "title": "Task Manager CLI",
-        "description": "A command-line interface tool for managing daily tasks and tracking time efficiently, built natively for terminal utility and developers.",
+        "title": "Airosphere",
+        "description": "A MERN stack community platform for college branches with Role-Based Access Control (RBAC) and academic resource management serving 1.6k+ visitors.",
         "tech": [
+            "MongoDB",
+            "Express",
+            "React",
             "Node.js",
-            "Commander.js",
-            "Chalk"
+            "Redux"
         ],
-        "github": "https://github.com/anmolawasthi117/task-cli",
-        "live": "",
-        "coverImage": "/assets/project4-cover.jpg",
-        "video": "/assets/project4-video.mp4"
+        "github": "https://github.com/Alpharex121/AIROSPHERE",
+        "live": "https://airosphere.vercel.app",
+        "coverImage": "/assets/airosphere-cover.jpg",
+        "video": "/assets/airosphere-video.mp4"
     },
     {
         "id": 5,
-        "title": "Weather App",
-        "description": "Real-time weather application using OpenWeather API with detailed forecasts, maps, and geolocation utilities for accurate routing.",
+        "title": "Gyan-Path",
+        "description": "An indoor navigation app for campus buildings using Dijkstra's algorithm and multilevel bidirectional graphs to optimize multi-floor routing.",
         "tech": [
             "React",
-            "API",
-            "TailwindCSS"
+            "Leaflet",
+            "Dijkstra Algorithm",
+            "Node.js"
         ],
-        "github": "https://github.com/anmolawasthi117/weather-app",
-        "live": "https://weather-app.com",
-        "coverImage": "/assets/project5-cover.jpg",
-        "video": "/assets/project5-video.mp4"
+        "github": "https://github.com/Anmolawasthi117/Gyan_path_client",
+        "live": "",
+        "coverImage": "/assets/gyanpath-cover.jpg",
+        "video": "/assets/gyanpath-video.mp4"
+    },
+    {
+        "id": 6,
+        "title": "BareMetal (PolyScope)",
+        "description": "An interactive runtime visualizer to help developers understand low-level mechanics like memory management, concurrency models, and compilation.",
+        "tech": [
+            "React",
+            "TypeScript",
+            "Monaco Editor",
+            "Godbolt API"
+        ],
+        "github": "https://github.com/Anmolawasthi117/BareMetal",
+        "live": "https://baremetal-sand.vercel.app",
+        "coverImage": "/assets/baremetal-cover.jpg",
+        "video": "/assets/baremetal-video.mp4"
+    },
+    {
+        "id": 7,
+        "title": "StackSmith CLI",
+        "description": "A command-line tool to scaffold fullstack boilerplates for MERN, Redux, and Tailwind setups, with over 900+ downloads on npm.",
+        "tech": [
+            "Node.js",
+            "Commander.js",
+            "Inquirer",
+            "Chalk"
+        ],
+        "github": "https://github.com/Anmolawasthi117/stacksmith",
+        "live": "https://www.npmjs.com/package/@anmol117/stacksmith",
+        "coverImage": "/assets/stacksmith-cover.jpg",
+        "video": "/assets/stacksmith-video.mp4"
+    },
+    {
+        "id": 8,
+        "title": "LogKyaKahenge",
+        "description": "An AI-powered roasting platform that analyzes digital footprints and delivers personalized humor in Indian personas.",
+        "tech": [
+            "React 19",
+            "LangChain",
+            "Gemini API",
+            "Framer Motion"
+        ],
+        "github": "https://github.com/Anmolawasthi117/LogKyaKahenge",
+        "live": "https://logkyakahenge.vercel.app",
+        "coverImage": "/assets/logkya-cover.jpg",
+        "video": "/assets/logkya-video.mp4"
+    },
+    {
+        "id": 9,
+        "title": "What-If",
+        "description": "A creative platform that transforms hypothetical scenarios into visually stunning Ghibli-style animated stories using Gemini 2.0.",
+        "tech": [
+            "React 19",
+            "Redux Toolkit",
+            "Framer Motion",
+            "Gemini API"
+        ],
+        "github": "https://github.com/Anmolawasthi117/What-if",
+        "live": "",
+        "coverImage": "/assets/whatif-cover.jpg",
+        "video": "/assets/whatif-video.mp4"
+    },
+    {
+        "id": 10,
+        "title": "BidGrid",
+        "description": "An intelligent RFP management platform that automates vendor distribution, response collection, and AI-powered recommendations.",
+        "tech": [
+            "Node.js",
+            "React",
+            "MongoDB",
+            "Gemini API",
+            "Resend"
+        ],
+        "github": "https://github.com/Anmolawasthi117/BidGrid",
+        "live": "",
+        "coverImage": "/assets/bidgrid-cover.jpg",
+        "video": "/assets/bidgrid-video.mp4"
+    },
+    {
+        "id": 11,
+        "title": "DOM-O-RAMA",
+        "description": "A visual VDOM simulator to learn how modern frontend frameworks like React, Vue, and Svelte update the DOM through interactive diffing.",
+        "tech": [
+            "React 18",
+            "TypeScript",
+            "React Flow",
+            "Zustand"
+        ],
+        "github": "https://github.com/Anmolawasthi117/DOM-O-RAMA",
+        "live": "",
+        "coverImage": "/assets/domorama-cover.jpg",
+        "video": "/assets/domorama-video.mp4"
+    },
+    {
+        "id": 12,
+        "title": "PlanIt",
+        "description": "An automated timetable generator utilizing hybrid genetic algorithms and SOM to reduce scheduling conflicts by 40%.",
+        "tech": [
+            "Python",
+            "Fast API",
+            "React",
+            "Genetic Algorithms"
+        ],
+        "github": "https://github.com/Anmolawasthi117/PlanIt",
+        "live": "",
+        "coverImage": "/assets/planit-cover.jpg",
+        "video": "/assets/planit-video.mp4"
+    },
+    {
+        "id": 13,
+        "title": "Neuro Bots Site",
+        "description": "The official web platform for the Neuro Bots Robotics Club, acknowledged by the GGITS college administration.",
+        "tech": [
+            "React",
+            "Tailwind CSS",
+            "Vite",
+            "Vercel"
+        ],
+        "github": "https://github.com/Anmolawasthi117/neuro-bot",
+        "live": "https://neruo-bot.vercel.app",
+        "coverImage": "/assets/neuro-cover.jpg",
+        "video": "/assets/neuro-video.mp4"
     }
 ]
