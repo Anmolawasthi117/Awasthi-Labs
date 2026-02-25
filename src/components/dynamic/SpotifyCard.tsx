@@ -63,7 +63,7 @@ export const SpotifyCard = () => {
                 transition={{ duration: 0.3 }}
                 className="absolute inset-0 flex items-center gap-3 p-3 rounded-lg border border-zinc-800 bg-zinc-900/50 hover:bg-zinc-900 transition-colors cursor-pointer group"
               >
-                <img src={data.topTrack.albumArt} alt="Album Art" className="w-12 h-12 rounded-md object-cover shadow-md group-hover:scale-105 transition-transform" />
+                <img src={data.topTrack.albumArt} alt="Album Art" loading="lazy" className="w-12 h-12 rounded-md object-cover shadow-md group-hover:scale-105 transition-transform" />
                 <div className="flex flex-col overflow-hidden w-full">
                   <span className="text-[10px] text-zinc-500 font-semibold uppercase tracking-wider mb-0.5">Top Track This Month</span>
                   <span className="text-sm font-medium text-zinc-200 truncate">{data.topTrack.songName}</span>
@@ -84,7 +84,7 @@ export const SpotifyCard = () => {
                 transition={{ duration: 0.3 }}
                 className="absolute inset-0 flex items-center gap-3 p-3 rounded-lg border border-zinc-800 bg-zinc-900/50 hover:bg-zinc-900 transition-colors cursor-pointer group"
               >
-                <img src={data.topArtist.image} alt="Artist" className="w-12 h-12 rounded-full object-cover shadow-md group-hover:scale-105 transition-transform border border-zinc-700/50" />
+                <img src={data.topArtist.image} alt="Artist" loading="lazy" className="w-12 h-12 rounded-full object-cover shadow-md group-hover:scale-105 transition-transform border border-zinc-700/50" />
                 <div className="flex flex-col overflow-hidden w-full">
                   <span className="text-[10px] text-zinc-500 font-semibold uppercase tracking-wider mb-0.5">Top Artist This Month</span>
                   <span className="text-sm font-medium text-zinc-200 truncate flex items-center gap-1.5">

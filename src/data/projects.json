@@ -15,12 +15,12 @@
             "Vite"
         ],
         "github": "https://github.com/Anmolawasthi117/oat",
-        "live": "https://oat-tidy.vercel.app",
+        "live": "https://oat-cfed.vercel.app/",
         "coverImage": "/assets/oat.png",
         "video": "/assets/videos/oat.mp4"
     },
     {
-        "id": 2,
+        "id": 5,
         "title": "VibeScript (Chitrapath)",
         "description": "A full-stack application that transforms PDF books into cinematic, multisensory storytelling experiences. It orchestrates parallel AI generation to create scene-specific visuals, synchronized voice narration with character-specific emotions, and adaptive background music, effectively acting as 'Netflix for Books'.",
         "tech": [
@@ -36,7 +36,6 @@
             "SQLite"
         ],
         "github": "https://github.com/Anmolawasthi117/vibescript",
-        "live": "https://vibescript.vercel.app",
         "coverImage": "",
         "video": ""
     },
@@ -57,7 +56,7 @@
             "IR Sensors"
         ],
         "github": "https://github.com/Anmolawasthi117/medimate",
-        "live": "",
+        "live": "https://medimate-7lmb.vercel.app/",
         "coverImage": "/assets/medimate.jpeg",
         "video": "/assets/videos/medimate.mp4"
     },
@@ -81,7 +80,7 @@
         "video": "/assets/videos/airosphere.mp4"
     },
     {
-        "id": 5,
+        "id": 2,
         "title": "Gyan-Path",
         "description": "An indoor navigation web app specifically for the GGITS campus. It uses custom Dijkstra algorithms and multilevel bidirectional graphs to help users find exam rooms and labs, reducing navigation time by 60%.",
         "tech": [

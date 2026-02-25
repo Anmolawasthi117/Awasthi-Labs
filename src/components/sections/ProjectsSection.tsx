@@ -48,7 +48,7 @@ export const ProjectsSection = ({ limit }: ProjectsSectionProps) => {
               {/* Media Area */}
               <div className="w-full h-40 bg-zinc-900 rounded-lg mb-4 flex items-center justify-center relative overflow-hidden text-zinc-600 font-medium border border-zinc-800/50">
                 {project.coverImage ? (
-                  <img src={project.coverImage} alt={project.title} className="w-full h-full object-cover transition-opacity duration-300" style={{ opacity: hoveredId === project.id && project.video ? 0 : 1 }} />
+                  <img src={project.coverImage} alt={project.title} loading="lazy" className="w-full h-full object-cover transition-opacity duration-300" style={{ opacity: hoveredId === project.id && project.video ? 0 : 1 }} />
                 ) : (
                   <span className="text-xl font-bold uppercase tracking-wider text-zinc-50 opacity-20">Coming Soon</span>
                 )}
@@ -130,7 +130,7 @@ export const ProjectsSection = ({ limit }: ProjectsSectionProps) => {
                     className="w-full h-full object-cover"
                   />
                 ) : selectedProject.coverImage ? (
-                  <img src={selectedProject.coverImage} className="w-full h-full object-cover" alt="Cover" />
+                  <img src={selectedProject.coverImage} loading="lazy" className="w-full h-full object-cover" alt="Cover" />
                 ) : (
                   <div className="w-full h-full flex items-center justify-center text-zinc-600 font-medium text-xl uppercase tracking-wider">Coming Soon</div>
                 )}

@@ -1,15 +1,19 @@
+import { lazy, Suspense } from "react";
 import { Section } from "@/components/layout/PageWrapper";
 import { ProfileSection } from "@/components/sections/ProfileSection";
-import { ExperiencesSection } from "@/components/sections/ExperiencesSection";
-import { SkillsSection } from "@/components/sections/SkillsSection";
-import { ProjectsSection } from "@/components/sections/ProjectsSection";
-import { ArticleFeedSection } from "@/components/sections/ArticleFeedSection";
-import { QuoteSection } from "@/components/sections/QuoteSection";
-import { SpotifyCard } from "@/components/dynamic/SpotifyCard";
-import { GithubCard } from "@/components/dynamic/GithubCard";
-import { MediumCard } from "@/components/dynamic/MediumCard";
 import { ArrowUp } from "lucide-react";
 import { useNavigate } from "react-router-dom";
+
+// Lazy load below-the-fold components
+const ExperiencesSection = lazy(() => import("@/components/sections/ExperiencesSection").then(m => ({ default: m.ExperiencesSection })));
+const SkillsSection = lazy(() => import("@/components/sections/SkillsSection").then(m => ({ default: m.SkillsSection })));
+const ProjectsSection = lazy(() => import("@/components/sections/ProjectsSection").then(m => ({ default: m.ProjectsSection })));
+const ArticleFeedSection = lazy(() => import("@/components/sections/ArticleFeedSection").then(m => ({ default: m.ArticleFeedSection })));
+const QuoteSection = lazy(() => import("@/components/sections/QuoteSection").then(m => ({ default: m.QuoteSection })));
+const SpotifyCard = lazy(() => import("@/components/dynamic/SpotifyCard").then(m => ({ default: m.SpotifyCard })));
+const GithubCard = lazy(() => import("@/components/dynamic/GithubCard").then(m => ({ default: m.GithubCard })));
+
+const FallbackLoader = () => <div className="p-6 md:p-10 text-zinc-600 text-sm animate-pulse">Loading...</div>;
 
 export const Home = () => {
   const scrollToTop = () => window.scrollTo({ top: 0, behavior: "smooth" });
@@ -26,38 +30,50 @@ export const Home = () => {
       </Section>
 
       <Section delay={0.2}>
-        <div className="p-6 md:p-10">
-          <ExperiencesSection />
-        </div>
+        <Suspense fallback={<FallbackLoader />}>
+          <div className="p-6 md:p-10">
+            <ExperiencesSection />
+          </div>
+        </Suspense>
       </Section>
 
       <Section delay={0.3} bottomLabel="View All" onBottomLabelClick={() => navigate("/projects")}>
-        <div className="p-6 md:p-10">
-          <ProjectsSection limit={4} />
-        </div>
+        <Suspense fallback={<FallbackLoader />}>
+          <div className="p-6 md:p-10">
+            <ProjectsSection limit={4} />
+          </div>
+        </Suspense>
       </Section>
 
       <Section delay={0.4} bottomLabel="View All" onBottomLabelClick={() => window.open(import.meta.env.VITE_MEDIUM_URL || "https://medium.com/@anmolawasthi117", "_blank")}>
-        <div className="p-6 md:p-10">
-          <ArticleFeedSection limit={4} />
-        </div>
+        <Suspense fallback={<FallbackLoader />}>
+          <div className="p-6 md:p-10">
+            <ArticleFeedSection limit={4} />
+          </div>
+        </Suspense>
       </Section>
 
       <Section delay={0.5}>
-        <div className="p-6 md:p-10">
-          <SkillsSection />
-        </div>
+        <Suspense fallback={<FallbackLoader />}>
+          <div className="p-6 md:p-10">
+            <SkillsSection />
+          </div>
+        </Suspense>
       </Section>
 
       <Section delay={0.6}>
-        <div className="p-6 md:p-10 grid grid-cols-1 md:grid-cols-2 gap-6">
-          <SpotifyCard />
-          <GithubCard username="anmolawasthi117" />
-        </div>
+        <Suspense fallback={<FallbackLoader />}>
+          <div className="p-6 md:p-10 grid grid-cols-1 md:grid-cols-2 gap-6">
+            <SpotifyCard />
+            <GithubCard username="anmolawasthi117" />
+          </div>
+        </Suspense>
       </Section>
 
-      <Section delay={0.8}>
-        <QuoteSection />
+      <Section delay={0.7}>
+        <Suspense fallback={<FallbackLoader />}>
+          <QuoteSection />
+        </Suspense>
       </Section>
 
       <Section crosshair className="h-40 md:h-72" delay={0.9}>
