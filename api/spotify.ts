@@ -1,3 +1,5 @@
+import type { VercelRequest, VercelResponse } from '@vercel/node';
+
 const refresh_token = process.env.SPOTIFY_REFRESH_TOKEN || "";
 const TOP_TRACKS_ENDPOINT = `https://api.spotify.com/v1/me/top/tracks?time_range=short_term&limit=1`;
 const TOP_ARTISTS_ENDPOINT = `https://api.spotify.com/v1/me/top/artists?time_range=short_term&limit=1`;
@@ -41,22 +43,22 @@ const getTopSpotifyData = async () => {
   ]);
 
   return {
-      tracksRes,
-      artistsRes
+    tracksRes,
+    artistsRes
   };
 };
 
-export default async function handler(req, res) {
+export default async function handler(req: VercelRequest, res: VercelResponse) {
   try {
     const { tracksRes, artistsRes } = await getTopSpotifyData();
 
     if (!tracksRes || !artistsRes || !tracksRes.ok || !artistsRes.ok || tracksRes.status === 204 || artistsRes.status === 204) {
-        return res.status(200).json({ topTrack: null, topArtist: null, error: "Failed to fetch top data" });
+      return res.status(200).json({ topTrack: null, topArtist: null, error: "Failed to fetch top data" });
     }
 
     const [tracks, artists] = await Promise.all([
-        tracksRes.json(),
-        artistsRes.json()
+      tracksRes.json(),
+      artistsRes.json()
     ]);
 
     const track = tracks.items[0];
@@ -64,17 +66,17 @@ export default async function handler(req, res) {
 
     // Data shapes
     const topTrack = track ? {
-        songName: track.name,
-        artistName: track.artists.map((_artist) => _artist.name).join(", "),
-        albumArt: track.album.images[0]?.url,
-        url: track.external_urls.spotify
+      songName: track.name,
+      artistName: track.artists.map((_artist) => _artist.name).join(", "),
+      albumArt: track.album.images[0]?.url,
+      url: track.external_urls.spotify
     } : null;
 
     const topArtist = artist ? {
-        name: artist.name,
-        genres: artist.genres.slice(0, 2).join(", "),
-        image: artist.images[0]?.url,
-        url: artist.external_urls.spotify
+      name: artist.name,
+      genres: artist.genres.slice(0, 2).join(", "),
+      image: artist.images[0]?.url,
+      url: artist.external_urls.spotify
     } : null;
 
     res.setHeader("Cache-Control", "public, s-maxage=86400, stale-while-revalidate=43200"); // Cache for 1 day
