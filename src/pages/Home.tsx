@@ -4,7 +4,6 @@ import { ExperiencesSection } from "@/components/sections/ExperiencesSection";
 import { SkillsSection } from "@/components/sections/SkillsSection";
 import { ProjectsSection } from "@/components/sections/ProjectsSection";
 import { ArticleFeedSection } from "@/components/sections/ArticleFeedSection";
-import { NewsletterSection } from "@/components/sections/NewsletterSection";
 import { QuoteSection } from "@/components/sections/QuoteSection";
 import { SpotifyCard } from "@/components/dynamic/SpotifyCard";
 import { GithubCard } from "@/components/dynamic/GithubCard";
@@ -51,10 +50,6 @@ export const Home = () => {
       </Section>
 
       <Section delay={0.6}>
-        <NewsletterSection />
-      </Section>
-
-      <Section delay={0.7}>
         <div className="p-6 md:p-10 grid grid-cols-1 md:grid-cols-2 gap-6">
           <SpotifyCard />
           <GithubCard username="anmolawasthi117" />

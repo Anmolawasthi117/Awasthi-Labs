@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import profileData from "@/data/profile.json";
 import {  Mail, Eye, Github, Linkedin, Twitter, Code2, Link } from "lucide-react";
 import { GitHubCalendar } from "react-github-calendar";
@@ -11,6 +12,15 @@ const socialLinks = [
 ];
 
 export const ProfileSection = () => {
+  const [views, setViews] = useState<number | null>(null);
+
+  useEffect(() => {
+    fetch("/api/view")
+      .then(res => res.json())
+      .then(data => setViews(data.views))
+      .catch(console.error);
+  }, []);
+
   return (
     <div className="flex flex-col gap-10 p-6 md:p-10">
       {/* Top Header info */}
@@ -29,7 +39,7 @@ export const ProfileSection = () => {
            </div>
         </div>
         <div className="flex items-center gap-1.5 text-xs text-zinc-500 font-medium">
-           <Eye className="w-3.5 h-3.5" /> 4.1k
+           <Eye className="w-3.5 h-3.5" /> {views !== null ? views.toLocaleString() : "..."}
         </div>
       </div>
 
@@ -49,9 +59,12 @@ export const ProfileSection = () => {
         >
            <Link className="w-4 h-4" /> View Resume
         </a>
-        <button className="flex items-center gap-2 px-4 py-2 rounded-md bg-zinc-900/50 border border-zinc-800 text-zinc-300 font-medium text-[13px] hover:bg-zinc-800 transition-colors cursor-pointer whitespace-nowrap">
+        <a 
+          href={`mailto:${profileData.socials?.email || "anmolawasthi117@gmail.com"}`}
+          className="flex items-center gap-2 px-4 py-2 rounded-md bg-zinc-900/50 border border-zinc-800 text-zinc-300 font-medium text-[13px] hover:bg-zinc-800 transition-colors cursor-pointer whitespace-nowrap"
+        >
            <Mail className="w-4 h-4" /> Send an email
-        </button>
+        </a>
       </div>
 
       {/* Socials & GitHub */}
