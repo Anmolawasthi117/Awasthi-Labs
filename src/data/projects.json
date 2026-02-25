@@ -20,24 +20,21 @@
         "video": "/assets/videos/oat.mp4"
     },
     {
-        "id": 5,
-        "title": "VibeScript (Chitrapath)",
-        "description": "A full-stack application that transforms PDF books into cinematic, multisensory storytelling experiences. It orchestrates parallel AI generation to create scene-specific visuals, synchronized voice narration with character-specific emotions, and adaptive background music, effectively acting as 'Netflix for Books'.",
+        "id": 2,
+        "title": "Gyan-Path",
+        "description": "An indoor navigation web app specifically for the GGITS campus. It uses custom Dijkstra algorithms and multilevel bidirectional graphs to help users find exam rooms and labs, reducing navigation time by 60%.",
         "tech": [
-            "FastAPI",
-            "React 19",
-            "LangGraph",
-            "Llama-3.2-3B",
-            "SDXL Turbo",
-            "Kokoro-TTS",
-            "MusicGen",
-            "Tailwind CSS 4",
-            "GSAP",
-            "SQLite"
+            "React",
+            "Leaflet",
+            "Dijkstra's Algorithm",
+            "JSON Schema",
+            "Tailwind CSS",
+            "Vite"
         ],
-        "github": "https://github.com/Anmolawasthi117/vibescript",
-        "coverImage": "",
-        "video": ""
+        "github": "https://github.com/Anmolawasthi117/Gyan_path_client",
+        "live": "",
+        "coverImage": "/assets/gyan-path.png",
+        "video": "/assets/videos/gyan-path.mp4"
     },
     {
         "id": 3,
@@ -79,22 +76,26 @@
         "coverImage": "/assets/airosphere.png",
         "video": "/assets/videos/airosphere.mp4"
     },
+    
     {
-        "id": 2,
-        "title": "Gyan-Path",
-        "description": "An indoor navigation web app specifically for the GGITS campus. It uses custom Dijkstra algorithms and multilevel bidirectional graphs to help users find exam rooms and labs, reducing navigation time by 60%.",
+        "id": 5,
+        "title": "VibeScript (Chitrapath)",
+        "description": "A full-stack application that transforms PDF books into cinematic, multisensory storytelling experiences. It orchestrates parallel AI generation to create scene-specific visuals, synchronized voice narration with character-specific emotions, and adaptive background music, effectively acting as 'Netflix for Books'.",
         "tech": [
-            "React",
-            "Leaflet",
-            "Dijkstra's Algorithm",
-            "JSON Schema",
-            "Tailwind CSS",
-            "Vite"
+            "FastAPI",
+            "React 19",
+            "LangGraph",
+            "Llama-3.2-3B",
+            "SDXL Turbo",
+            "Kokoro-TTS",
+            "MusicGen",
+            "Tailwind CSS 4",
+            "GSAP",
+            "SQLite"
         ],
-        "github": "https://github.com/Anmolawasthi117/Gyan_path_client",
-        "live": "",
-        "coverImage": "/assets/gyan-path.png",
-        "video": "/assets/videos/gyan-path.mp4"
+        "github": "https://github.com/Anmolawasthi117/vibescript",
+        "coverImage": "",
+        "video": ""
     },
     {
         "id": 6,
