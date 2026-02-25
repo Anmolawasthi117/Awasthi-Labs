@@ -65,7 +65,7 @@ export default async function handler(req, res) {
     // Data shapes
     const topTrack = track ? {
         songName: track.name,
-        artistName: track.artists.map((_artist: any) => _artist.name).join(", "),
+        artistName: track.artists.map((_artist) => _artist.name).join(", "),
         albumArt: track.album.images[0]?.url,
         url: track.external_urls.spotify
     } : null;
