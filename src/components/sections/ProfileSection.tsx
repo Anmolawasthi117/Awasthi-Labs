@@ -42,10 +42,10 @@ export const ProfileSection = () => {
 
       {/* CTAs */}
       <div className="flex gap-3">
-        <button className="flex items-center gap-2 px-4 py-2 rounded-md bg-zinc-200 text-zinc-900 font-medium text-[13px] hover:bg-zinc-100 transition-colors shadow-sm">
-           <Calendar className="w-4 h-4" /> Book an intro call
+        <button className="flex items-center gap-2 px-4 py-2 rounded-md bg-zinc-200 text-zinc-900 font-medium text-[13px] hover:bg-zinc-100 transition-colors shadow-sm cursor-pointer whitespace-nowrap">
+           <Link className="w-4 h-4" /> View Resume
         </button>
-        <button className="flex items-center gap-2 px-4 py-2 rounded-md bg-zinc-900/50 border border-zinc-800 text-zinc-300 font-medium text-[13px] hover:bg-zinc-800 transition-colors">
+        <button className="flex items-center gap-2 px-4 py-2 rounded-md bg-zinc-900/50 border border-zinc-800 text-zinc-300 font-medium text-[13px] hover:bg-zinc-800 transition-colors cursor-pointer whitespace-nowrap">
            <Mail className="w-4 h-4" /> Send an email
         </button>
       </div>

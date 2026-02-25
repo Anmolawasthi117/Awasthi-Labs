@@ -55,10 +55,9 @@ export const Home = () => {
       </Section>
 
       <Section delay={0.7}>
-        <div className="p-6 md:p-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="p-6 md:p-10 grid grid-cols-1 md:grid-cols-2 gap-6">
           <SpotifyCard />
           <GithubCard username="anmolawasthi117" />
-          <MediumCard username="anmolawasthi117" />
         </div>
       </Section>
 

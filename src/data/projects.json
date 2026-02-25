@@ -2,67 +2,72 @@
     {
         "id": 1,
         "title": "Netflix Clone",
-        "description": "A full-stack Netflix clone featuring authentication, movie fetching from TMDB, and Stripe integration.",
+        "description": "A full-stack Netflix clone featuring authentication, movie fetching from TMDB, and Stripe integration. Built to understand scalable video delivery and complex application states.",
         "tech": [
             "React",
             "Node",
             "MongoDB",
             "Stripe"
         ],
-        "link": "https://github.com/anmolawasthi117/netflix-clone",
+        "github": "https://github.com/anmolawasthi117/netflix-clone",
+        "live": "https://netflix-clone.com",
         "coverImage": "/assets/project1-cover.jpg",
         "video": "/assets/project1-video.mp4"
     },
     {
         "id": 2,
         "title": "E-Commerce Platform",
-        "description": "Modern e-commerce platform with cart functionality, secure checkout, and admin dashboard.",
+        "description": "Modern e-commerce platform with cart functionality, secure checkout, and a comprehensive admin dashboard for inventory management.",
         "tech": [
             "Next.js",
             "TailwindCSS",
             "Prisma",
             "PostgreSQL"
         ],
-        "link": "https://github.com/anmolawasthi117/ecommerce",
+        "github": "https://github.com/anmolawasthi117/ecommerce",
+        "live": "https://ecommerce.com",
         "coverImage": "/assets/project2-cover.jpg",
         "video": "/assets/project2-video.mp4"
     },
     {
         "id": 3,
         "title": "Portfolio v1",
-        "description": "My first developer portfolio showcasing basic projects and skills using React and CSS.",
+        "description": "My first developer portfolio showcasing basic projects and skills using React and CSS. This was my learning ground for pure frontend layout techniques.",
         "tech": [
             "React",
             "CSS",
             "Vite"
         ],
-        "link": "https://github.com/anmolawasthi117/portfolio-v1",
+        "github": "https://github.com/anmolawasthi117/portfolio-v1",
+        "live": "https://anmol.dev",
         "coverImage": "/assets/project3-cover.jpg",
         "video": "/assets/project3-video.mp4"
     },
     {
         "id": 4,
         "title": "Task Manager CLI",
-        "description": "A command-line interface tool for managing daily tasks and tracking time efficiently.",
+        "description": "A command-line interface tool for managing daily tasks and tracking time efficiently, built natively for terminal utility and developers.",
         "tech": [
             "Node.js",
             "Commander.js",
             "Chalk"
         ],
-        "link": "https://github.com/anmolawasthi117/task-cli",
+        "github": "https://github.com/anmolawasthi117/task-cli",
+        "live": "",
         "coverImage": "/assets/project4-cover.jpg",
         "video": "/assets/project4-video.mp4"
     },
     {
         "id": 5,
         "title": "Weather App",
-        "description": "Real-time weather application using OpenWeather API with detailed forecasts and maps.",
+        "description": "Real-time weather application using OpenWeather API with detailed forecasts, maps, and geolocation utilities for accurate routing.",
         "tech": [
             "React",
             "API",
             "TailwindCSS"
         ],
-        "link": "https://github.com/anmolawasthi117/weather-app",
+        "github": "https://github.com/anmolawasthi117/weather-app",
+        "live": "https://weather-app.com",
         "coverImage": "/assets/project5-cover.jpg",
         "video": "/assets/project5-video.mp4"
     }
