@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Mail, Calendar } from "lucide-react";
 import profileData from "@/data/profile.json";
+import { RotatingTitle } from "@/components/ui/RotatingTitle";
 
 export const HeroSection = () => {
   return (
@@ -17,9 +18,9 @@ export const HeroSection = () => {
           <h1 className="text-xl font-semibold tracking-tight text-zinc-50">
             {profileData.name}
           </h1>
-          <p className="text-zinc-500 text-sm">
-            Software Engineer
-          </p>
+          <div className="text-zinc-500 text-sm min-h-[20px]">
+            <RotatingTitle titles={profileData.rotatingTitles} />
+          </div>
         </div>
       </div>
 

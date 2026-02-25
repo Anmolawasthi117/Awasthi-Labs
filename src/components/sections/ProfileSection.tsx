@@ -2,6 +2,8 @@ import { useState, useEffect } from "react";
 import profileData from "@/data/profile.json";
 import {  Mail, Eye, Github, Linkedin, Twitter, Code2, Link } from "lucide-react";
 import { GitHubCalendar } from "react-github-calendar";
+import { motion } from "framer-motion";
+import { RotatingTitle } from "@/components/ui/RotatingTitle";
 
 const socialLinks = [
   { icon: Github, href: profileData.socials?.github || "https://github.com", label: "GitHub" },
@@ -35,7 +37,9 @@ export const ProfileSection = () => {
                <div className="w-1.5 h-1.5 rounded-full border border-zinc-400 bg-transparent"></div>
                <h1 className="text-xl md:text-2xl font-semibold text-zinc-100">{profileData.name}</h1>
              </div>
-             <p className="text-sm text-zinc-500">Software Engineer</p>
+             <div className="text-sm text-zinc-500 min-h-[20px]">
+               <RotatingTitle titles={profileData.rotatingTitles} />
+             </div>
            </div>
         </div>
         <div className="flex items-center gap-1.5 text-xs text-zinc-500 font-medium">
@@ -51,20 +55,24 @@ export const ProfileSection = () => {
 
       {/* CTAs */}
       <div className="flex gap-3">
-        <a 
+        <motion.a 
+          whileHover={{ scale: 1.02, y: -2 }}
+          whileTap={{ scale: 0.98 }}
           href="https://drive.google.com/file/d/1pQlA-My484vv36pXBBQ4eY7sNm4g-BMu/view" 
           target="_blank" 
           rel="noopener noreferrer"
-          className="flex items-center gap-2 px-4 py-2 rounded-md bg-zinc-200 text-zinc-900 font-medium text-[13px] hover:bg-zinc-100 transition-colors shadow-sm cursor-pointer whitespace-nowrap"
+          className="flex items-center gap-2 px-4 py-2 rounded-md bg-zinc-200 text-zinc-900 font-medium text-[13px] shadow-sm cursor-pointer whitespace-nowrap"
         >
            <Link className="w-4 h-4" /> View Resume
-        </a>
-        <a 
+        </motion.a>
+        <motion.a 
+          whileHover={{ scale: 1.02, y: -2 }}
+          whileTap={{ scale: 0.98 }}
           href={`mailto:${profileData.socials?.email || "anmolawasthi117@gmail.com"}`}
           className="flex items-center gap-2 px-4 py-2 rounded-md bg-zinc-900/50 border border-zinc-800 text-zinc-300 font-medium text-[13px] hover:bg-zinc-800 transition-colors cursor-pointer whitespace-nowrap"
         >
            <Mail className="w-4 h-4" /> Send an email
-        </a>
+        </motion.a>
       </div>
 
       {/* Socials & GitHub */}
@@ -74,16 +82,18 @@ export const ProfileSection = () => {
             {socialLinks.map((link) => {
               const Icon = link.icon;
               return (
-                <a
+                <motion.a
+                  whileHover={{ scale: 1.05, y: -2 }}
+                  whileTap={{ scale: 0.95 }}
                   key={link.label}
                   href={link.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-2 px-3 py-1.5 rounded-md border border-zinc-800 bg-zinc-900/50 text-[13px] font-medium text-zinc-400 hover:text-zinc-50 hover:border-zinc-700 hover:bg-zinc-800 transition-all"
+                  className="flex items-center gap-2 px-3 py-1.5 rounded-md border border-zinc-800 bg-zinc-900/50 text-[13px] font-medium text-zinc-400 hover:text-zinc-50 hover:border-zinc-700 hover:bg-zinc-800 transition-colors"
                 >
                   <Icon className="h-3.5 w-3.5" />
                   {link.label}
-                </a>
+                </motion.a>
               );
             })}
          </div>

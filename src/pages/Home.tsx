@@ -7,7 +7,7 @@ import { useNavigate } from "react-router-dom";
 // Lazy load below-the-fold components
 const ExperiencesSection = lazy(() => import("@/components/sections/ExperiencesSection").then(m => ({ default: m.ExperiencesSection })));
 const SkillsSection = lazy(() => import("@/components/sections/SkillsSection").then(m => ({ default: m.SkillsSection })));
-const ProjectsSection = lazy(() => import("@/components/sections/ProjectsSection").then(m => ({ default: m.ProjectsSection })));
+import { ProjectsSection } from "@/components/sections/ProjectsSection";
 const ArticleFeedSection = lazy(() => import("@/components/sections/ArticleFeedSection").then(m => ({ default: m.ArticleFeedSection })));
 const QuoteSection = lazy(() => import("@/components/sections/QuoteSection").then(m => ({ default: m.QuoteSection })));
 const SpotifyCard = lazy(() => import("@/components/dynamic/SpotifyCard").then(m => ({ default: m.SpotifyCard })));

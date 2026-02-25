@@ -1,5 +1,4 @@
 <div align="center">
-  <img src="https://raw.githubusercontent.com/Anmolawasthi117/Awasthi-Labs/main/public/assets/anmol.jpeg" alt="Awasthi Labs Profile" width="120" height="120" style="border-radius: 50%; border: 2px solid #3f3f46;" />
   <h1 align="center">Awasthi Labs</h1>
   <p align="center">
     <strong>A high-signal, minimalist developer portfolio.</strong>

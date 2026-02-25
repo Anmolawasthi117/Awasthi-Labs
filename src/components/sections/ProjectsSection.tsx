@@ -38,17 +38,19 @@ export const ProjectsSection = ({ limit }: ProjectsSectionProps) => {
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {displayProjects.map((project) => (
-            <div
+            <motion.div
+              whileHover={{ y: -4, scale: 1.01 }}
+              whileTap={{ scale: 0.98 }}
               key={project.id}
               onClick={() => setSelectedProject(project as Project)}
               onMouseEnter={() => setHoveredId(project.id)}
               onMouseLeave={() => setHoveredId(null)}
-              className="group flex flex-col p-4 rounded-xl border border-zinc-900 bg-zinc-950 hover:bg-zinc-900 hover:border-zinc-800 transition-colors cursor-pointer"
+              className="group flex flex-col p-4 rounded-xl border border-zinc-900 bg-zinc-950/50 hover:bg-zinc-900 hover:border-zinc-800 transition-colors cursor-pointer"
             >
               {/* Media Area */}
               <div className="w-full h-40 bg-zinc-900 rounded-lg mb-4 flex items-center justify-center relative overflow-hidden text-zinc-600 font-medium border border-zinc-800/50">
                 {project.coverImage ? (
-                  <img src={project.coverImage} alt={project.title} loading="lazy" className="w-full h-full object-cover transition-opacity duration-300" style={{ opacity: hoveredId === project.id && project.video ? 0 : 1 }} />
+                  <img src={project.coverImage} alt={project.title} loading={limit ? "eager" : "lazy"} className="w-full h-full object-cover transition-opacity duration-300" style={{ opacity: hoveredId === project.id && project.video ? 0 : 1 }} />
                 ) : (
                   <span className="text-xl font-bold uppercase tracking-wider text-zinc-50 opacity-20">Coming Soon</span>
                 )}
@@ -60,6 +62,7 @@ export const ProjectsSection = ({ limit }: ProjectsSectionProps) => {
                     loop 
                     muted 
                     playsInline
+                    preload={limit ? "auto" : "metadata"}
                     className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-300 ${hoveredId === project.id ? 'opacity-100' : 'opacity-0'}`}
                   />
                 )}
@@ -85,10 +88,10 @@ export const ProjectsSection = ({ limit }: ProjectsSectionProps) => {
                 </p>
                 
                 <div className="mt-auto pt-4 flex items-center text-xs text-zinc-400 group-hover:text-zinc-200 transition-colors">
-                  View Details <ArrowUpRight className="ml-1 h-3.5 w-3.5" />
+                  View Details <ArrowUpRight className="ml-1 h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
                 </div>
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>
