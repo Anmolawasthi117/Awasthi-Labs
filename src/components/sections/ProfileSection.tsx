@@ -43,7 +43,7 @@ export const ProfileSection = () => {
            </div>
         </div>
         <div className="flex items-center gap-1.5 text-xs text-zinc-500 font-medium">
-           <Eye className="w-3.5 h-3.5" /> {views !== null ? views.toLocaleString() : "..."}
+           <Eye className="w-3.5 h-3.5" /> {typeof views === "number" ? views.toLocaleString() : "..."}
         </div>
       </div>
 

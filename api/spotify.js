@@ -24,7 +24,12 @@ const getAccessToken = async () => {
 };
 
 const getTopSpotifyData = async () => {
-  const { access_token } = await getAccessToken();
+  const tokenParams = await getAccessToken();
+  const access_token = tokenParams.access_token;
+
+  if (!access_token) {
+    return { tracksRes: null, artistsRes: null };
+  }
 
   const [tracksRes, artistsRes] = await Promise.all([
     fetch(TOP_TRACKS_ENDPOINT, {
@@ -45,8 +50,8 @@ export default async function handler(req: any, res: any) {
   try {
     const { tracksRes, artistsRes } = await getTopSpotifyData();
 
-    if (tracksRes.status === 204 || tracksRes.status > 400 || artistsRes.status === 204 || artistsRes.status > 400) {
-        return res.status(200).json({ error: "Failed to fetch top data" });
+    if (!tracksRes || !artistsRes || !tracksRes.ok || !artistsRes.ok || tracksRes.status === 204 || artistsRes.status === 204) {
+        return res.status(200).json({ topTrack: null, topArtist: null, error: "Failed to fetch top data" });
     }
 
     const [tracks, artists] = await Promise.all([
@@ -80,6 +85,6 @@ export default async function handler(req: any, res: any) {
     });
   } catch (error) {
     console.error("Spotify API error:", error);
-    return res.status(500).json({ message: "Internal Server Error" });
+    return res.status(200).json({ topTrack: null, topArtist: null, error: "Internal Server Error" });
   }
 }
