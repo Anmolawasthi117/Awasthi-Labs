@@ -1,6 +1,6 @@
 import projectsData from "@/data/projects.json";
 import { ArrowUpRight, Pin, Github, ExternalLink, X } from "lucide-react";
-import { useState } from "react";
+import { useState, useRef, useCallback } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 
 interface ProjectsSectionProps {
@@ -57,12 +57,21 @@ export const ProjectsSection = ({ limit }: ProjectsSectionProps) => {
                 
                 {project.video && (
                   <video 
-                    src={project.video} 
-                    autoPlay 
+                    ref={(el) => {
+                      if (!el) return;
+                      if (hoveredId === project.id) {
+                        if (!el.src || el.src !== window.location.origin + project.video) {
+                          el.src = project.video;
+                        }
+                        el.play().catch(() => {});
+                      } else {
+                        el.pause();
+                      }
+                    }}
                     loop 
                     muted 
                     playsInline
-                    preload={limit ? "auto" : "metadata"}
+                    preload="none"
                     className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-300 ${hoveredId === project.id ? 'opacity-100' : 'opacity-0'}`}
                   />
                 )}
