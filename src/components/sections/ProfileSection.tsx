@@ -1,14 +1,13 @@
 import profileData from "@/data/profile.json";
-import { Calendar, Mail, Eye, Github, Linkedin, Twitter, Code2, Link } from "lucide-react";
+import {  Mail, Eye, Github, Linkedin, Twitter, Code2, Link } from "lucide-react";
 import { GitHubCalendar } from "react-github-calendar";
 
 const socialLinks = [
   { icon: Github, href: profileData.socials?.github || "https://github.com", label: "GitHub" },
-  { icon: Twitter, href: "https://twitter.com", label: "Twitter" },
+  { icon: Twitter, href: profileData.socials?.x || "https://twitter.com", label: "X (Twitter)" },
   { icon: Linkedin, href: profileData.socials?.linkedin || "https://linkedin.com", label: "LinkedIn" },
-  { icon: Link, href: "https://medium.com", label: "Medium" },
-  { icon: Code2, href: "https://leetcode.com", label: "LeetCode" },
-  { icon: Link, href: "#", label: "More" },
+  { icon: Link, href: profileData.socials?.medium || "https://medium.com", label: "Medium" },
+  { icon: Code2, href: profileData.socials?.leetcode || "https://leetcode.com", label: "LeetCode" }
 ];
 
 export const ProfileSection = () => {
@@ -18,7 +17,7 @@ export const ProfileSection = () => {
       <div className="flex items-start justify-between">
         <div className="flex gap-4 items-center">
            <div className="h-16 w-16 md:h-20 md:w-20 rounded-xl bg-zinc-900 border border-zinc-800 overflow-hidden relative shadow-sm">
-              <img src="https://avatars.githubusercontent.com/u/101416301?v=4" alt={profileData.name} className="object-cover w-full h-full grayscale hover:grayscale-0 transition-all" />
+              <img src="/assets/anmol.jpeg" alt={profileData.name} className="object-cover w-full h-full grayscale hover:grayscale-0 transition-all" />
               <div className="absolute top-1.5 left-1.5 w-2 h-2 rounded-full border border-zinc-900 bg-zinc-500"></div>
            </div>
            <div className="flex flex-col gap-0.5">
@@ -42,9 +41,14 @@ export const ProfileSection = () => {
 
       {/* CTAs */}
       <div className="flex gap-3">
-        <button className="flex items-center gap-2 px-4 py-2 rounded-md bg-zinc-200 text-zinc-900 font-medium text-[13px] hover:bg-zinc-100 transition-colors shadow-sm cursor-pointer whitespace-nowrap">
+        <a 
+          href="https://drive.google.com/file/d/1pQlA-My484vv36pXBBQ4eY7sNm4g-BMu/view" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="flex items-center gap-2 px-4 py-2 rounded-md bg-zinc-200 text-zinc-900 font-medium text-[13px] hover:bg-zinc-100 transition-colors shadow-sm cursor-pointer whitespace-nowrap"
+        >
            <Link className="w-4 h-4" /> View Resume
-        </button>
+        </a>
         <button className="flex items-center gap-2 px-4 py-2 rounded-md bg-zinc-900/50 border border-zinc-800 text-zinc-300 font-medium text-[13px] hover:bg-zinc-800 transition-colors cursor-pointer whitespace-nowrap">
            <Mail className="w-4 h-4" /> Send an email
         </button>

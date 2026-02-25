@@ -60,25 +60,53 @@ export const fetchMediumPosts = async (username: string) => {
     }
 };
 
-// Spotify requires OAuth. For now, this is a placeholder or can use Last.fm as an alternative
-export interface SpotifyStatus {
-    isPlaying: boolean;
-    songName?: string;
-    artistName?: string;
-    albumArt?: string;
+export interface SpotifyTopData {
+    topTrack?: {
+        songName: string;
+        artistName: string;
+        albumArt: string;
+        url: string;
+    };
+    topArtist?: {
+        name: string;
+        genres: string;
+        image: string;
+        url: string;
+    };
+    error?: string;
 }
 
-export const fetchSpotifyStatus = async (): Promise<SpotifyStatus | null> => {
-    // TODO: Replace with actual backend endpoint once configured.
-    // Returning mock data for UI development.
-    return new Promise((resolve) => {
-        setTimeout(() => {
-            resolve({
-                isPlaying: true,
-                songName: "Midnight City",
-                artistName: "M83",
-                albumArt: "https://i.scdn.co/image/ab67616d0000b273b7e7a79f5f9ea32f144415ad"
-            });
-        }, 1000);
-    });
+export const fetchSpotifyTop = async (): Promise<SpotifyTopData | null> => {
+    try {
+        const response = await fetch("/api/spotify");
+        if (!response.ok) {
+            console.warn(`Spotify API unreachable (${response.status}). Using local mock fallback.`);
+            return {
+                topTrack: {
+                    songName: "Mock Track (Local)",
+                    artistName: "Vite Server",
+                    albumArt: "https://i.scdn.co/image/ab67616d0000b273b7e7a79f5f9ea32f144415ad",
+                    url: "#"
+                },
+                topArtist: {
+                    name: "Mock Artist",
+                    genres: "electronic, synthpop",
+                    image: "https://i.scdn.co/image/ab67616d0000b273b7e7a79f5f9ea32f144415ad",
+                    url: "#"
+                }
+            };
+        }
+        const data = await response.json();
+        return data as SpotifyTopData;
+    } catch (error) {
+        console.warn("Spotify Fetch Error (Using Mock Fallback):", error);
+        return {
+            topTrack: {
+                songName: "Disconnected",
+                artistName: "No API Configured",
+                albumArt: "https://i.scdn.co/image/ab67616d0000b273b7e7a79f5f9ea32f144415ad",
+                url: "#"
+            }
+        };
+    }
 };

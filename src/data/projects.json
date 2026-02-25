@@ -2,201 +2,240 @@
     {
         "id": 1,
         "title": "OAT - Offline Album Tidy",
-        "description": "A privacy-first, browser-based face recognition tool that uses face-api.js and MobileFaceNet (ONNX) to sift through thousands of photos locally using Web Workers and OPFS.",
+        "description": "A privacy-first, browser-based face recognition tool designed to solve the 'privacy nightmare' of cloud AI. It processes thousands of photos locally to find specific people in large shared albums. It utilizes a hybrid architecture of face-api.js for detection and MobileFaceNet (ONNX) for generating 512-dim embeddings with cosine similarity matching.",
         "tech": [
             "React 19",
             "TypeScript",
-            "ONNX Runtime",
+            "ONNX Runtime Web",
+            "OPFS",
             "IndexedDB",
-            "Zustand"
+            "Web Workers",
+            "Tailwind CSS",
+            "Zustand",
+            "Vite"
         ],
         "github": "https://github.com/Anmolawasthi117/oat",
         "live": "https://oat-tidy.vercel.app",
-        "coverImage": "/assets/oat-cover.jpg",
-        "video": "/assets/oat-video.mp4"
+        "coverImage": "/assets/oat.png",
+        "video": "/assets/videos/oat.mp4"
     },
     {
         "id": 2,
         "title": "VibeScript (Chitrapath)",
-        "description": "An AI-powered storytelling experience that transforms PDFs into cinematic scenes with generated visuals, narration, and background music using LangGraph and Llama 3.2.",
+        "description": "A full-stack application that transforms PDF books into cinematic, multisensory storytelling experiences. It orchestrates parallel AI generation to create scene-specific visuals, synchronized voice narration with character-specific emotions, and adaptive background music, effectively acting as 'Netflix for Books'.",
         "tech": [
             "FastAPI",
             "React 19",
-            "Llama 3.2",
+            "LangGraph",
+            "Llama-3.2-3B",
             "SDXL Turbo",
-            "LangGraph"
+            "Kokoro-TTS",
+            "MusicGen",
+            "Tailwind CSS 4",
+            "GSAP",
+            "SQLite"
         ],
         "github": "https://github.com/Anmolawasthi117/vibescript",
         "live": "https://vibescript.vercel.app",
-        "coverImage": "/assets/vibescript-cover.jpg",
-        "video": "/assets/vibescript-video.mp4"
+        "coverImage": "",
+        "video": ""
     },
     {
         "id": 3,
         "title": "MediMate",
-        "description": "A smart medication companion unit featuring a circular 28-compartment automated dispenser, AI scheduling, and real-time adherence tracking via MediProgress.",
+        "description": "An IoT-based smart medication dispenser for elderly and chronically ill patients. It features a 28-compartment circular hardware unit that automatically rotates to the correct dose, provides audio-visual alerts, and tracks adherence via a digital platform named MediProgress.",
         "tech": [
             "ESP32",
+            "Arduino",
             "C++",
             "React",
             "Node.js",
-            "MQTT"
+            "Express",
+            "MongoDB",
+            "MQTT",
+            "Stepper Motors",
+            "IR Sensors"
         ],
         "github": "https://github.com/Anmolawasthi117/medimate",
         "live": "",
-        "coverImage": "/assets/medimate-cover.jpg",
-        "video": "/assets/medimate-video.mp4"
+        "coverImage": "/assets/medimate.jpeg",
+        "video": "/assets/videos/medimate.mp4"
     },
     {
         "id": 4,
         "title": "Airosphere",
-        "description": "A MERN stack community platform for college branches with Role-Based Access Control (RBAC) and academic resource management serving 1.6k+ visitors.",
+        "description": "A MERN stack community platform built for the college branch, featuring Role-Based Access Control (RBAC). It provides academic resource management (notes, PYQs), a 'Student Connect' feature for finding teammates, and learning roadmaps with progress tracking.",
         "tech": [
             "MongoDB",
-            "Express",
-            "React",
+            "Express.js",
+            "React.js",
             "Node.js",
-            "Redux"
+            "Redux",
+            "JWT",
+            "Tailwind CSS",
+            "Firebase Storage"
         ],
         "github": "https://github.com/Alpharex121/AIROSPHERE",
         "live": "https://airosphere.vercel.app",
-        "coverImage": "/assets/airosphere-cover.jpg",
-        "video": "/assets/airosphere-video.mp4"
+        "coverImage": "/assets/airosphere.png",
+        "video": "/assets/videos/airosphere.mp4"
     },
     {
         "id": 5,
         "title": "Gyan-Path",
-        "description": "An indoor navigation app for campus buildings using Dijkstra's algorithm and multilevel bidirectional graphs to optimize multi-floor routing.",
+        "description": "An indoor navigation web app specifically for the GGITS campus. It uses custom Dijkstra algorithms and multilevel bidirectional graphs to help users find exam rooms and labs, reducing navigation time by 60%.",
         "tech": [
             "React",
             "Leaflet",
-            "Dijkstra Algorithm",
-            "Node.js"
+            "Dijkstra's Algorithm",
+            "JSON Schema",
+            "Tailwind CSS",
+            "Vite"
         ],
         "github": "https://github.com/Anmolawasthi117/Gyan_path_client",
         "live": "",
-        "coverImage": "/assets/gyanpath-cover.jpg",
-        "video": "/assets/gyanpath-video.mp4"
+        "coverImage": "/assets/gyan-path.png",
+        "video": "/assets/videos/gyan-path.mp4"
     },
     {
         "id": 6,
         "title": "BareMetal (PolyScope)",
-        "description": "An interactive runtime visualizer to help developers understand low-level mechanics like memory management, concurrency models, and compilation.",
+        "description": "The ultimate runtime visualizer; an interactive educational platform designed to show how programming languages work under the hood. It integrates the Godbolt Compiler Explorer API to visualize assembly output and memory management models for C++, Go, and Rust.",
         "tech": [
-            "React",
+            "React 19",
             "TypeScript",
+            "Godbolt API",
             "Monaco Editor",
-            "Godbolt API"
+            "Tailwind CSS 4",
+            "Zustand",
+            "Framer Motion"
         ],
         "github": "https://github.com/Anmolawasthi117/BareMetal",
         "live": "https://baremetal-sand.vercel.app",
-        "coverImage": "/assets/baremetal-cover.jpg",
-        "video": "/assets/baremetal-video.mp4"
+        "coverImage": "/assets/baremeatal.png",
+        "video": "/assets/videos/bare-metal.mp4"
     },
     {
         "id": 7,
-        "title": "StackSmith CLI",
-        "description": "A command-line tool to scaffold fullstack boilerplates for MERN, Redux, and Tailwind setups, with over 900+ downloads on npm.",
+        "title": "@anmol117/stacksmith",
+        "description": "A CLI scaffolding tool for developers to jumpstart full-stack projects. It automates the creation of boilerplates for Frontend (React/Vite), Backend (Express), and Fullstack architectures, with 900+ downloads on npm.",
         "tech": [
             "Node.js",
             "Commander.js",
             "Inquirer",
-            "Chalk"
+            "Chalk",
+            "React Templates",
+            "Express Templates"
         ],
         "github": "https://github.com/Anmolawasthi117/stacksmith",
         "live": "https://www.npmjs.com/package/@anmol117/stacksmith",
-        "coverImage": "/assets/stacksmith-cover.jpg",
-        "video": "/assets/stacksmith-video.mp4"
+        "coverImage": "/assets/stack-smith.png",
+        "video": ""
     },
     {
         "id": 8,
         "title": "LogKyaKahenge",
-        "description": "An AI-powered roasting platform that analyzes digital footprints and delivers personalized humor in Indian personas.",
+        "description": "A satirical AI-powered roasting platform. It analyzes digital footprints (GitHub, LeetCode, Reddit) and delivers brutal, personalized roasts in the voices of iconic Indian personas like 'Tana Shah' or 'Pinky Aunty'.",
         "tech": [
             "React 19",
+            "TypeScript",
             "LangChain",
             "Gemini API",
-            "Framer Motion"
+            "Groq API",
+            "Vercel KV (Redis)",
+            "Framer Motion",
+            "Tailwind CSS 4"
         ],
         "github": "https://github.com/Anmolawasthi117/LogKyaKahenge",
         "live": "https://logkyakahenge.vercel.app",
-        "coverImage": "/assets/logkya-cover.jpg",
-        "video": "/assets/logkya-video.mp4"
+        "coverImage": "/assets/loag-kya-kahenge.png",
+        "video": "/assets/videos/log-kya-kahenge.mp4"
     },
     {
         "id": 9,
         "title": "What-If",
-        "description": "A creative platform that transforms hypothetical scenarios into visually stunning Ghibli-style animated stories using Gemini 2.0.",
+        "description": "An interactive story generator that uses Gemini AI to turn hypothetical scenarios into Ghibli-style animated narratives. Features Indian-style humor and parallel image generation for high-speed performance.",
         "tech": [
             "React 19",
             "Redux Toolkit",
+            "Gemini 2.0 Flash",
             "Framer Motion",
-            "Gemini API"
+            "Tailwind CSS 4",
+            "Axios"
         ],
         "github": "https://github.com/Anmolawasthi117/What-if",
         "live": "",
-        "coverImage": "/assets/whatif-cover.jpg",
-        "video": "/assets/whatif-video.mp4"
+        "coverImage": "/assets/what-if.jpeg",
+        "video": ""
     },
     {
         "id": 10,
         "title": "BidGrid",
-        "description": "An intelligent RFP management platform that automates vendor distribution, response collection, and AI-powered recommendations.",
+        "description": "An intelligent RFP (Request for Proposal) management platform. It automates the procurement workflow by parsing vendor responses from emails/PDFs and using AI to recommend the best vendor based on price, timeline, and terms.",
         "tech": [
             "Node.js",
             "React",
-            "MongoDB",
+            "MongoDB Atlas",
             "Gemini API",
-            "Resend"
+            "Resend API",
+            "Gmail IMAP",
+            "Zod",
+            "Redux Toolkit"
         ],
         "github": "https://github.com/Anmolawasthi117/BidGrid",
         "live": "",
-        "coverImage": "/assets/bidgrid-cover.jpg",
-        "video": "/assets/bidgrid-video.mp4"
+        "coverImage": "/assets/bidgrid.png",
+        "video": "/assets/videos/bidgrid.mp4"
     },
     {
         "id": 11,
         "title": "DOM-O-RAMA",
-        "description": "A visual VDOM simulator to learn how modern frontend frameworks like React, Vue, and Svelte update the DOM through interactive diffing.",
+        "description": "A visual Virtual DOM simulator. It allows developers to compare Framework strategies (React Fiber, Vue Patch, Svelte direct updates) side-by-side using interactive trees and head-to-head 'Framework Battles'.",
         "tech": [
             "React 18",
             "TypeScript",
             "React Flow",
-            "Zustand"
+            "Zustand",
+            "Framer Motion",
+            "Tailwind CSS 4",
+            "React Router v7"
         ],
         "github": "https://github.com/Anmolawasthi117/DOM-O-RAMA",
         "live": "",
-        "coverImage": "/assets/domorama-cover.jpg",
-        "video": "/assets/domorama-video.mp4"
+        "coverImage": "/assets/dom-o-rama.png",
+        "video": "/assets/videos/dom - rama.mp4"
     },
     {
         "id": 12,
         "title": "PlanIt",
-        "description": "An automated timetable generator utilizing hybrid genetic algorithms and SOM to reduce scheduling conflicts by 40%.",
+        "description": "An automated timetable generator for academic institutions. It utilizes a hybrid genetic algorithm (SOM/SCDS) to optimize 15+ hard and soft constraints, reducing conflicts by 40%.",
         "tech": [
             "Python",
-            "Fast API",
+            "FastAPI",
             "React",
-            "Genetic Algorithms"
+            "Genetic Algorithms",
+            "Constraint Satisfaction",
+            "NEP 2020 logic"
         ],
         "github": "https://github.com/Anmolawasthi117/PlanIt",
         "live": "",
-        "coverImage": "/assets/planit-cover.jpg",
-        "video": "/assets/planit-video.mp4"
+        "coverImage": "/assets/planit.png",
+        "video": "/assets/videos/planit.mp4"
     },
     {
         "id": 13,
-        "title": "Neuro Bots Site",
-        "description": "The official web platform for the Neuro Bots Robotics Club, acknowledged by the GGITS college administration.",
+        "title": "Neuro Bots Club Site",
+        "description": "The official web platform for the Neuro Bots Robotics Club at GGITS. It showcases the club's mission, team, and educational robotics simulators, officially acknowledged by the HOD and Principal.",
         "tech": [
             "React",
-            "Tailwind CSS",
             "Vite",
-            "Vercel"
+            "Tailwind CSS",
+            "Vercel",
+            "JSON Data Injection"
         ],
         "github": "https://github.com/Anmolawasthi117/neuro-bot",
         "live": "https://neruo-bot.vercel.app",
-        "coverImage": "/assets/neuro-cover.jpg",
-        "video": "/assets/neuro-video.mp4"
+        "coverImage": "/assets/nerurobots.png",
+        "video": "/assets/videos/nuro-bots.mp4"
     }
 ]

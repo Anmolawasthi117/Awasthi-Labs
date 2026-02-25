@@ -50,7 +50,7 @@ export const ProjectsSection = ({ limit }: ProjectsSectionProps) => {
                 {project.coverImage ? (
                   <img src={project.coverImage} alt={project.title} className="w-full h-full object-cover transition-opacity duration-300" style={{ opacity: hoveredId === project.id && project.video ? 0 : 1 }} />
                 ) : (
-                  <span className="text-xl font-bold uppercase tracking-wider text-zinc-50 opacity-20">No Image</span>
+                  <span className="text-xl font-bold uppercase tracking-wider text-zinc-50 opacity-20">Coming Soon</span>
                 )}
                 
                 {project.video && (
@@ -132,7 +132,7 @@ export const ProjectsSection = ({ limit }: ProjectsSectionProps) => {
                 ) : selectedProject.coverImage ? (
                   <img src={selectedProject.coverImage} className="w-full h-full object-cover" alt="Cover" />
                 ) : (
-                  <div className="w-full h-full flex items-center justify-center text-zinc-600 font-medium">No Media Provided</div>
+                  <div className="w-full h-full flex items-center justify-center text-zinc-600 font-medium text-xl uppercase tracking-wider">Coming Soon</div>
                 )}
                 
                 {/* Gradient overlay for text contrast */}
