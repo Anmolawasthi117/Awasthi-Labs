@@ -1,36 +1,7 @@
 import { ChevronUp, ChevronDown } from "lucide-react";
+import experiences from "@/data/experiences.json";
 
 export const ExperiencesSection = () => {
-  const experiences = [
-    {
-      id: 1,
-      role: "Software Engineer",
-      company: "Palo Alto Networks", // Placeholder
-      type: "Full Time",
-      date: "Aug, 2025 - Present",
-      location: "Palo Alto, USA - Remote",
-      logo: "https://avatar.vercel.sh/palo-alto",
-      highlights: [
-        "Owned the core presentation editor, driving major performance and reliability improvements",
-        "Designed and built core editor features like drag-and-drop, resize, and keyboard shortcuts end-to-end",
-        "Owned a foundational refactor, strengthening a critical codebase to enable safer and faster production",
-        "Drove major Drive page performance improvements, resolving bugs to deliver faster, reliable experiences"
-      ],
-      skills: ["Next", "Tailwind", "TypeScript", "JavaScript", "Express", "PostgreSQL", "Docker"]
-    },
-    {
-      id: 2,
-      role: "Full Stack Developer",
-      company: "GSoC",
-      type: "",
-      date: "May, 2025 - Nov, 2025",
-      location: "USA - Remote",
-      logo: "https://avatar.vercel.sh/gsoc",
-      highlights: [],
-      skills: []
-    }
-  ];
-
   return (
     <div className="flex flex-col gap-6">
       <h2 className="text-lg font-semibold tracking-tight text-zinc-100">

@@ -25,12 +25,14 @@ export const Section = ({
   delay = 0,
   crosshair = false,
   bottomLabel = "",
+  onBottomLabelClick,
 }: {
   children: ReactNode;
   className?: string;
   delay?: number;
   crosshair?: boolean;
   bottomLabel?: string;
+  onBottomLabelClick?: () => void;
 }) => {
   return (
     <section className="w-full flex justify-center border-b border-dashed border-zinc-800 relative">
@@ -47,7 +49,10 @@ export const Section = ({
         
         {bottomLabel && (
            <div className="absolute left-1/2 bottom-0 translate-y-1/2 -translate-x-1/2 bg-[#0a0a0a] px-3 z-10 flex">
-             <button className="flex items-center gap-1.5 px-3 py-1 text-xs font-medium text-zinc-200 bg-zinc-950 rounded-md border border-zinc-800 hover:bg-zinc-900 transition-colors">
+             <button 
+               onClick={onBottomLabelClick}
+               className="flex items-center gap-1.5 px-3 py-1 text-xs font-medium text-zinc-200 bg-zinc-950 rounded-md border border-zinc-800 hover:bg-zinc-900 transition-colors cursor-pointer"
+             >
                 {bottomLabel} <ArrowUpRight className="h-3 w-3" />
              </button>
            </div>

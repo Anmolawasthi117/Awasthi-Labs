@@ -1,20 +1,69 @@
 [
     {
-        "id": "1",
-        "title": "OAT (Offline Album Tidy)",
-        "description": "An offline-first music sorting and album management tool.",
-        "link": "#"
+        "id": 1,
+        "title": "Netflix Clone",
+        "description": "A full-stack Netflix clone featuring authentication, movie fetching from TMDB, and Stripe integration.",
+        "tech": [
+            "React",
+            "Node",
+            "MongoDB",
+            "Stripe"
+        ],
+        "link": "https://github.com/anmolawasthi117/netflix-clone",
+        "coverImage": "/assets/project1-cover.jpg",
+        "video": "/assets/project1-video.mp4"
     },
     {
-        "id": "2",
-        "title": "VibeScript",
-        "description": "A book-to-audio drama pipeline with AI-driven character voices.",
-        "link": "#"
+        "id": 2,
+        "title": "E-Commerce Platform",
+        "description": "Modern e-commerce platform with cart functionality, secure checkout, and admin dashboard.",
+        "tech": [
+            "Next.js",
+            "TailwindCSS",
+            "Prisma",
+            "PostgreSQL"
+        ],
+        "link": "https://github.com/anmolawasthi117/ecommerce",
+        "coverImage": "/assets/project2-cover.jpg",
+        "video": "/assets/project2-video.mp4"
     },
     {
-        "id": "3",
-        "title": "Medimate",
-        "description": "A healthcare utility for tracking and managing medical timelines.",
-        "link": "#"
+        "id": 3,
+        "title": "Portfolio v1",
+        "description": "My first developer portfolio showcasing basic projects and skills using React and CSS.",
+        "tech": [
+            "React",
+            "CSS",
+            "Vite"
+        ],
+        "link": "https://github.com/anmolawasthi117/portfolio-v1",
+        "coverImage": "/assets/project3-cover.jpg",
+        "video": "/assets/project3-video.mp4"
+    },
+    {
+        "id": 4,
+        "title": "Task Manager CLI",
+        "description": "A command-line interface tool for managing daily tasks and tracking time efficiently.",
+        "tech": [
+            "Node.js",
+            "Commander.js",
+            "Chalk"
+        ],
+        "link": "https://github.com/anmolawasthi117/task-cli",
+        "coverImage": "/assets/project4-cover.jpg",
+        "video": "/assets/project4-video.mp4"
+    },
+    {
+        "id": 5,
+        "title": "Weather App",
+        "description": "Real-time weather application using OpenWeather API with detailed forecasts and maps.",
+        "tech": [
+            "React",
+            "API",
+            "TailwindCSS"
+        ],
+        "link": "https://github.com/anmolawasthi117/weather-app",
+        "coverImage": "/assets/project5-cover.jpg",
+        "video": "/assets/project5-video.mp4"
     }
 ]
