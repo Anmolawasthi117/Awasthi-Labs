@@ -46,7 +46,7 @@ const getTopSpotifyData = async () => {
   };
 };
 
-export default async function handler(req: any, res: any) {
+export default async function handler(req, res) {
   try {
     const { tracksRes, artistsRes } = await getTopSpotifyData();
 
