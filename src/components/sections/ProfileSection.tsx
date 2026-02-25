@@ -89,17 +89,15 @@ export const ProfileSection = () => {
          </div>
 
          {/* GitHub Graph */}
-         <div className="w-full mt-4 overflow-hidden text-zinc-400 flex items-center">
-           <div className="w-full overflow-x-auto pb-4 -mb-4 snap-x">
-             <div className="min-w-fit pr-4">
-               <GitHubCalendar
-                 username="anmolawasthi117"
-                 blockSize={11}
-                 blockMargin={4}
-                 colorScheme="dark"
-                 fontSize={12}
-               />
-             </div>
+         <div className="w-full mt-4 overflow-x-auto custom-scrollbar pb-2">
+           <div className="min-w-max pr-4 text-zinc-400">
+             <GitHubCalendar
+               username="anmolawasthi117"
+               blockSize={11}
+               blockMargin={4}
+               colorScheme="dark"
+               fontSize={12}
+             />
            </div>
          </div>
       </div>
