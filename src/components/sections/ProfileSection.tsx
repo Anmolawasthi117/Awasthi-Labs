@@ -19,7 +19,7 @@ export const ProfileSection = () => {
   useEffect(() => {
     fetch("/api/view")
       .then(res => res.json())
-      .then(data => setViews(data.views))
+      .then(data => setViews(data.count ?? data.views))
       .catch(console.error);
   }, []);
 

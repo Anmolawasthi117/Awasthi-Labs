@@ -85,13 +85,13 @@ export const fetchSpotifyTop = async (): Promise<SpotifyTopData | null> => {
                 topTrack: {
                     songName: "Mock Track (Local)",
                     artistName: "Vite Server",
-                    albumArt: "https://i.scdn.co/image/ab67616d0000b273b7e7a79f5f9ea32f144415ad",
+                    albumArt: "https://github.com/github.png",
                     url: "#"
                 },
                 topArtist: {
                     name: "Mock Artist",
                     genres: "electronic, synthpop",
-                    image: "https://i.scdn.co/image/ab67616d0000b273b7e7a79f5f9ea32f144415ad",
+                    image: "https://github.com/github.png",
                     url: "#"
                 }
             };
@@ -104,7 +104,7 @@ export const fetchSpotifyTop = async (): Promise<SpotifyTopData | null> => {
             topTrack: {
                 songName: "Disconnected",
                 artistName: "No API Configured",
-                albumArt: "https://i.scdn.co/image/ab67616d0000b273b7e7a79f5f9ea32f144415ad",
+                albumArt: "https://github.com/github.png",
                 url: "#"
             }
         };

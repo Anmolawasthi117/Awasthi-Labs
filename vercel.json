@@ -1,0 +1,27 @@
+{
+    "headers": [
+        {
+            "source": "/assets/videos/(.*\\.mp4)",
+            "headers": [
+                {
+                    "key": "Accept-Ranges",
+                    "value": "bytes"
+                }
+            ]
+        }
+    ],
+    "rewrites": [
+        {
+            "source": "/api/(.*)",
+            "destination": "/api/$1"
+        },
+        {
+            "source": "/assets/(.*)",
+            "destination": "/assets/$1"
+        },
+        {
+            "source": "/(.*)",
+            "destination": "/index.html"
+        }
+    ]
+}
