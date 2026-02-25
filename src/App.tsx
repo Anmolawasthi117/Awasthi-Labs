@@ -15,9 +15,14 @@ function App() {
         </Routes>
       </Suspense>
       
-      <footer className="w-full flex justify-center py-6 relative z-10 bg-[#0a0a0a]">
-        <div className="w-full max-w-3xl px-6 flex justify-center text-xs text-zinc-600 font-medium">
-             2026 © Built with React & Tailwind.
+      <footer className="w-full flex justify-center py-8 relative z-10 bg-[#0a0a0a] border-t border-zinc-900/50">
+        <div className="w-full max-w-3xl px-6 flex flex-col items-center gap-2 text-[11px] text-zinc-500 font-medium tracking-tight">
+          <p>© {new Date().getFullYear()} Anmol Awasthi. Built with React & Tailwind.</p>
+          <div className="flex items-center gap-3 text-zinc-600">
+            <span className="h-1 w-1 rounded-full bg-zinc-800" />
+            <span>High Signal, Low Noise</span>
+            <span className="h-1 w-1 rounded-full bg-zinc-800" />
+          </div>
         </div>
       </footer>
     </PageWrapper>
