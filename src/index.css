@@ -51,12 +51,6 @@
 
 body {
   background-color: var(--background);
-  background-image:
-    linear-gradient(to right, var(--border) 1px, transparent 1px),
-    linear-gradient(to bottom, var(--border) 1px, transparent 1px);
-  background-size: 4rem 4rem;
-  /* 64px grid size */
-  background-position: center center;
   color: var(--foreground);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
