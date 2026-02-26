@@ -32,7 +32,7 @@
             "Vite"
         ],
         "github": "https://github.com/Anmolawasthi117/Gyan_path_client",
-        "live": "",
+        "live": "https://gyan-path.vercel.app/",
         "coverImage": "/assets/gyan-path.png",
         "video": "/assets/videos/gyan-path.mp4"
     },
@@ -72,7 +72,7 @@
             "Firebase Storage"
         ],
         "github": "https://github.com/Alpharex121/AIROSPHERE",
-        "live": "https://airosphere.vercel.app",
+        "live": "https://airosphere.vercel.app/",
         "coverImage": "/assets/airosphere.png",
         "video": ""
     },
@@ -146,7 +146,7 @@
             "Tailwind CSS 4"
         ],
         "github": "https://github.com/Anmolawasthi117/LogKyaKahenge",
-        "live": "https://logkyakahenge.vercel.app",
+        "live": "https://log-kya-kahenge.vercel.app/",
         "coverImage": "/assets/loag-kya-kahenge.png",
         "video": "/assets/videos/log-kya-kahenge.mp4"
     },
@@ -163,7 +163,6 @@
             "Axios"
         ],
         "github": "https://github.com/Anmolawasthi117/What-if",
-        "live": "",
         "coverImage": "/assets/what-if.jpeg",
         "video": ""
     },
@@ -182,7 +181,6 @@
             "Redux Toolkit"
         ],
         "github": "https://github.com/Anmolawasthi117/BidGrid",
-        "live": "",
         "coverImage": "/assets/bidgrid.png",
         "video": "/assets/videos/bidgrid.mp4"
     },
@@ -200,7 +198,7 @@
             "React Router v7"
         ],
         "github": "https://github.com/Anmolawasthi117/DOM-O-RAMA",
-        "live": "",
+        "live": "https://dom-o-rama.vercel.app/",
         "coverImage": "/assets/dom-o-rama.png",
         "video": "/assets/videos/dom - rama.mp4"
     },
@@ -217,7 +215,7 @@
             "NEP 2020 logic"
         ],
         "github": "https://github.com/Anmolawasthi117/PlanIt",
-        "live": "",
+        "live": "https://capybara-schedular.vercel.app/",
         "coverImage": "/assets/planit.png",
         "video": "/assets/videos/planit.mp4"
     },

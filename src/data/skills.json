@@ -10,25 +10,19 @@
     "frontendTechnologies": [
         "React.js (React 18/19)",
         "Next.js",
-        "Tailwind CSS (Tailwind 4)",
-        "Framer Motion",
-        "GSAP",
-        "Three.js",
-        "Zustand",
-        "Redux / Redux Toolkit",
-        "TanStack Query",
-        "React Flow"
+        "Tailwind CSS (Tailwind 4)"
+    ],
+    "Ai libs and frameworks":[
+        "Langchain",
+        "Langragph",
+        "RAG",
+        "Huggingface"
     ],
     "backendTechnologies": [
         "Node.js",
         "Express.js",
         "FastAPI",
-        "Django",
-        "Flask",
-        "Socket.io",
-        "GraphQL",
-        "REST APIs",
-        "JWT Authentication"
+        "Django"
     ],
     "databases": [
         "MongoDB",
@@ -36,32 +30,16 @@
         "MySQL",
         "SQLite",
         "Prisma (ORM)",
-        "Vercel KV (Redis)",
+        "Redis",
         "Firebase Firestore"
-    ],
-    "aiAndRobotics": [
-        "ONNX Runtime Web",
-        "LangChain",
-        "LangGraph",
-        "Llama 3.2",
-        "SDXL Turbo",
-        "Gemini API",
-        "face-api.js",
-        "Arduino / ESP32 Firmware",
-        "Stepper/Servo Motor Control",
-        "Sensor Integration (IR/Hall Effect)",
-        "Edge AI"
     ],
     "devOpsAndTools": [
         "Git / GitHub",
-        "Vite",
         "Docker",
         "AWS",
-        "npm / npx Scaffolding",
-        "Vercel / Firebase Hosting",
-        "Monaco Editor Integration",
-        "Zod",
-        "Jest"
+        "Jest",
+        "Postman",
+        "Requestly"
     ],
     "coreConcepts": [
         "Data Structures and Algorithms (DSA)",
@@ -69,7 +47,6 @@
         "Operating Systems (OS)",
         "DBMS",
         "System Design",
-        "Role-Based Access Control (RBAC)",
-        "Indoor Pathfinding (Dijkstra/A*)"
+        "Role-Based Access Control (RBAC)"
     ]
 }
