@@ -58,7 +58,7 @@ export const ProfileSection = () => {
         <motion.a 
           whileHover={{ scale: 1.02, y: -2 }}
           whileTap={{ scale: 0.98 }}
-          href="https://drive.google.com/file/d/1pQlA-My484vv36pXBBQ4eY7sNm4g-BMu/view" 
+          href="https://drive.google.com/file/d/1pQlA-My484vv36pXBBQ4eY7sNm4g-BMu/view?usp=sharing" 
           target="_blank" 
           rel="noopener noreferrer"
           className="flex items-center gap-2 px-4 py-2 rounded-md bg-zinc-200 text-zinc-900 font-medium text-[13px] shadow-sm cursor-pointer whitespace-nowrap"
