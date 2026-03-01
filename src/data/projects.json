@@ -78,7 +78,7 @@
     },
     {
         "id": 5,
-        "title": "VibeScript (Chitrapath)",
+        "title": "VibeScript",
         "description": "A full-stack application that transforms PDF books into cinematic, multisensory storytelling experiences. It orchestrates parallel AI generation to create scene-specific visuals, synchronized voice narration with character-specific emotions, and adaptive background music, effectively acting as 'Netflix for Books'.",
         "tech": [
             "FastAPI",
